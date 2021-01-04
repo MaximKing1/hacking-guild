@@ -39,15 +39,23 @@ git clone https://github.com/nmap/nmap.git
 
 To start use `nmap` this will say that we are using the Nmap module and then we can start adding options then the IP Address we want to scan, the options can be specifyed using either `-option` or `--option` depending on what one your doing and then the IP Address after the options.
 
-### Example \(Normal Speed\)
+## Nmap Essential Commands 
+
+### Normal Speed
 
 ```text
 nmap 10.10.10.10
 ```
 
-### Example \(Fast Scan\)
+### Fast Scan
 
 ```text
 nmap -F 10.10.10.10
+```
+
+### Open Ports Scan
+
+```text
+nmap -p- -A 10.10.10.10 --open
 ```
 
